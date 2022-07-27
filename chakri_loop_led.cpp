@@ -22,10 +22,22 @@ int main()
             }
         }
     }
-    // output each array element's value
+    
+    // single strip loop
     for (int i = 0; i < A; i++)
     {
         for (int j = 0; j < B; j++)
+        {
+            cout << "x[" << i
+                 << "][" << j << "]: ";
+            cout << x[i][j]<<endl;
+        }
+    }
+    
+    //Row wise loop - Rainbow
+    for (int j = 0; j < B; j++)
+    {
+        for (int i = 0; i < A; i++)
         {
             cout << "x[" << i
                  << "][" << j << "]: ";
