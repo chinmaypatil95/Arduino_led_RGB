@@ -45,6 +45,16 @@ int main()
         }
     }
 
+    //Reverse Row wise loop - Rainbow
+    for (int j = B-1; j >= 0; j--)
+    {
+        for (int i = 0; i < A; i++)
+        {
+            cout << "x[" << i
+                 << "][" << j << "]: ";
+            cout << x[i][j]<<endl;
+        }
+    }
 
     return 0;
 }
